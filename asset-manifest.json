@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.369fe4fe.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.8b701f55.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.8b701f55.chunk.js.map",
-    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.01e32f12.js",
-    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.01e32f12.js.map",
-    "static/css/2.21e977d2.chunk.css": "/react-gh-pages/static/css/2.21e977d2.chunk.css",
-    "static/js/2.959ac636.chunk.js": "/react-gh-pages/static/js/2.959ac636.chunk.js",
-    "static/js/2.959ac636.chunk.js.map": "/react-gh-pages/static/js/2.959ac636.chunk.js.map",
-    "index.html": "/react-gh-pages/index.html",
-    "static/css/2.21e977d2.chunk.css.map": "/react-gh-pages/static/css/2.21e977d2.chunk.css.map",
-    "static/css/main.369fe4fe.chunk.css.map": "/react-gh-pages/static/css/main.369fe4fe.chunk.css.map",
-    "static/js/2.959ac636.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.959ac636.chunk.js.LICENSE.txt",
-    "static/media/cld-video-player.min.css": "/react-gh-pages/static/media/cloudinary_icon_for_white_bg.cdc80e08.svg"
+    "main.css": "/Suvi-React/static/css/main.369fe4fe.chunk.css",
+    "main.js": "/Suvi-React/static/js/main.8b701f55.chunk.js",
+    "main.js.map": "/Suvi-React/static/js/main.8b701f55.chunk.js.map",
+    "runtime-main.js": "/Suvi-React/static/js/runtime-main.403ea04e.js",
+    "runtime-main.js.map": "/Suvi-React/static/js/runtime-main.403ea04e.js.map",
+    "static/css/2.9e052944.chunk.css": "/Suvi-React/static/css/2.9e052944.chunk.css",
+    "static/js/2.cd11cb97.chunk.js": "/Suvi-React/static/js/2.cd11cb97.chunk.js",
+    "static/js/2.cd11cb97.chunk.js.map": "/Suvi-React/static/js/2.cd11cb97.chunk.js.map",
+    "index.html": "/Suvi-React/index.html",
+    "static/css/2.9e052944.chunk.css.map": "/Suvi-React/static/css/2.9e052944.chunk.css.map",
+    "static/css/main.369fe4fe.chunk.css.map": "/Suvi-React/static/css/main.369fe4fe.chunk.css.map",
+    "static/js/2.cd11cb97.chunk.js.LICENSE.txt": "/Suvi-React/static/js/2.cd11cb97.chunk.js.LICENSE.txt",
+    "static/media/cld-video-player.min.css": "/Suvi-React/static/media/cloudinary_icon_for_white_bg.cdc80e08.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.01e32f12.js",
-    "static/css/2.21e977d2.chunk.css",
-    "static/js/2.959ac636.chunk.js",
+    "static/js/runtime-main.403ea04e.js",
+    "static/css/2.9e052944.chunk.css",
+    "static/js/2.cd11cb97.chunk.js",
     "static/css/main.369fe4fe.chunk.css",
     "static/js/main.8b701f55.chunk.js"
   ]
