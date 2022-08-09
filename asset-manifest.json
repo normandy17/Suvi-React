@@ -1,24 +1,32 @@
 {
   "files": {
-    "main.css": "/Suvi-React/static/css/main.369fe4fe.chunk.css",
-    "main.js": "/Suvi-React/static/js/main.03803ad0.chunk.js",
-    "main.js.map": "/Suvi-React/static/js/main.03803ad0.chunk.js.map",
+    "main.js": "/Suvi-React/static/js/main.f9e926a4.chunk.js",
+    "main.js.map": "/Suvi-React/static/js/main.f9e926a4.chunk.js.map",
     "runtime-main.js": "/Suvi-React/static/js/runtime-main.403ea04e.js",
     "runtime-main.js.map": "/Suvi-React/static/js/runtime-main.403ea04e.js.map",
     "static/css/2.9e052944.chunk.css": "/Suvi-React/static/css/2.9e052944.chunk.css",
-    "static/js/2.cd11cb97.chunk.js": "/Suvi-React/static/js/2.cd11cb97.chunk.js",
-    "static/js/2.cd11cb97.chunk.js.map": "/Suvi-React/static/js/2.cd11cb97.chunk.js.map",
+    "static/js/2.35178e3c.chunk.js": "/Suvi-React/static/js/2.35178e3c.chunk.js",
+    "static/js/2.35178e3c.chunk.js.map": "/Suvi-React/static/js/2.35178e3c.chunk.js.map",
     "index.html": "/Suvi-React/index.html",
     "static/css/2.9e052944.chunk.css.map": "/Suvi-React/static/css/2.9e052944.chunk.css.map",
-    "static/css/main.369fe4fe.chunk.css.map": "/Suvi-React/static/css/main.369fe4fe.chunk.css.map",
-    "static/js/2.cd11cb97.chunk.js.LICENSE.txt": "/Suvi-React/static/js/2.cd11cb97.chunk.js.LICENSE.txt",
+    "static/js/2.35178e3c.chunk.js.LICENSE.txt": "/Suvi-React/static/js/2.35178e3c.chunk.js.LICENSE.txt",
+    "static/media/Banner.74962f23.jpg": "/Suvi-React/static/media/Banner.74962f23.jpg",
+    "static/media/Certification.e36f2811.png": "/Suvi-React/static/media/Certification.e36f2811.png",
+    "static/media/DigitalEcosystem.b362e185.png": "/Suvi-React/static/media/DigitalEcosystem.b362e185.png",
+    "static/media/InsuranceLearning.f35e8e20.png": "/Suvi-React/static/media/InsuranceLearning.f35e8e20.png",
+    "static/media/LearningCalendar.b8189e83.png": "/Suvi-React/static/media/LearningCalendar.b8189e83.png",
+    "static/media/LearningSapiensProducts.63089668.png": "/Suvi-React/static/media/LearningSapiensProducts.63089668.png",
+    "static/media/NewJoinerLearning.2b8493da.png": "/Suvi-React/static/media/NewJoinerLearning.2b8493da.png",
+    "static/media/PeopleSkills.94e2115a.png": "/Suvi-React/static/media/PeopleSkills.94e2115a.png",
+    "static/media/ProcessLearning.790d106c.png": "/Suvi-React/static/media/ProcessLearning.790d106c.png",
+    "static/media/Sapiens.cd4d34e9.svg": "/Suvi-React/static/media/Sapiens.cd4d34e9.svg",
+    "static/media/TechnologyLearning.64a888ae.png": "/Suvi-React/static/media/TechnologyLearning.64a888ae.png",
     "static/media/cld-video-player.min.css": "/Suvi-React/static/media/cloudinary_icon_for_white_bg.cdc80e08.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.403ea04e.js",
     "static/css/2.9e052944.chunk.css",
-    "static/js/2.cd11cb97.chunk.js",
-    "static/css/main.369fe4fe.chunk.css",
-    "static/js/main.03803ad0.chunk.js"
+    "static/js/2.35178e3c.chunk.js",
+    "static/js/main.f9e926a4.chunk.js"
   ]
 }
