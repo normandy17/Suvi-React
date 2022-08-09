@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/Suvi-React/static/js/main.f9e926a4.chunk.js",
-    "main.js.map": "/Suvi-React/static/js/main.f9e926a4.chunk.js.map",
+    "main.js": "/Suvi-React/static/js/main.15c8d4e1.chunk.js",
+    "main.js.map": "/Suvi-React/static/js/main.15c8d4e1.chunk.js.map",
     "runtime-main.js": "/Suvi-React/static/js/runtime-main.403ea04e.js",
     "runtime-main.js.map": "/Suvi-React/static/js/runtime-main.403ea04e.js.map",
     "static/css/2.9e052944.chunk.css": "/Suvi-React/static/css/2.9e052944.chunk.css",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.403ea04e.js",
     "static/css/2.9e052944.chunk.css",
     "static/js/2.35178e3c.chunk.js",
-    "static/js/main.f9e926a4.chunk.js"
+    "static/js/main.15c8d4e1.chunk.js"
   ]
 }
