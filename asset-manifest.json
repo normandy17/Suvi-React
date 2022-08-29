@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/Suvi-React/static/js/main.48fc585a.chunk.js",
-    "main.js.map": "/Suvi-React/static/js/main.48fc585a.chunk.js.map",
+    "main.js": "/Suvi-React/static/js/main.4532382a.chunk.js",
+    "main.js.map": "/Suvi-React/static/js/main.4532382a.chunk.js.map",
     "runtime-main.js": "/Suvi-React/static/js/runtime-main.403ea04e.js",
     "runtime-main.js.map": "/Suvi-React/static/js/runtime-main.403ea04e.js.map",
-    "static/js/2.d71eec28.chunk.js": "/Suvi-React/static/js/2.d71eec28.chunk.js",
-    "static/js/2.d71eec28.chunk.js.map": "/Suvi-React/static/js/2.d71eec28.chunk.js.map",
+    "static/js/2.c74032f0.chunk.js": "/Suvi-React/static/js/2.c74032f0.chunk.js",
+    "static/js/2.c74032f0.chunk.js.map": "/Suvi-React/static/js/2.c74032f0.chunk.js.map",
     "index.html": "/Suvi-React/index.html",
-    "static/js/2.d71eec28.chunk.js.LICENSE.txt": "/Suvi-React/static/js/2.d71eec28.chunk.js.LICENSE.txt",
+    "static/js/2.c74032f0.chunk.js.LICENSE.txt": "/Suvi-React/static/js/2.c74032f0.chunk.js.LICENSE.txt",
     "static/media/Banner.74962f23.jpg": "/Suvi-React/static/media/Banner.74962f23.jpg",
     "static/media/Certification.e36f2811.png": "/Suvi-React/static/media/Certification.e36f2811.png",
     "static/media/DigitalEcosystem.b362e185.png": "/Suvi-React/static/media/DigitalEcosystem.b362e185.png",
@@ -18,11 +18,13 @@
     "static/media/PeopleSkills.94e2115a.png": "/Suvi-React/static/media/PeopleSkills.94e2115a.png",
     "static/media/ProcessLearning.790d106c.png": "/Suvi-React/static/media/ProcessLearning.790d106c.png",
     "static/media/Sapiens.cd4d34e9.svg": "/Suvi-React/static/media/Sapiens.cd4d34e9.svg",
-    "static/media/TechnologyLearning.64a888ae.png": "/Suvi-React/static/media/TechnologyLearning.64a888ae.png"
+    "static/media/TechnologyLearning.64a888ae.png": "/Suvi-React/static/media/TechnologyLearning.64a888ae.png",
+    "static/media/video.4187e79a.mp4": "/Suvi-React/static/media/video.4187e79a.mp4",
+    "static/media/video.bf44e97a.png": "/Suvi-React/static/media/video.bf44e97a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.403ea04e.js",
-    "static/js/2.d71eec28.chunk.js",
-    "static/js/main.48fc585a.chunk.js"
+    "static/js/2.c74032f0.chunk.js",
+    "static/js/main.4532382a.chunk.js"
   ]
 }
