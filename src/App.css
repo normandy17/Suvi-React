@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.animated .fadeInUp .ib-chatIcon{
+  background-color: #00287b !important;
+}
+ul::-webkit-scrollbar { 
+  width: 4px !important;
+}

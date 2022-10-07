@@ -1,29 +1,23 @@
 import React, { useState } from "react";
-import { fade, withStyles } from "@material-ui/core/styles";
+import { withStyles } from "@material-ui/core/styles";
 import {
     AppBar,
     Toolbar,
     IconButton,
-    Typography,
-    InputBase,
-    Badge,
     MenuItem,
     Menu
 } from "@material-ui/core";
-import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
-import AccountCircle from "@material-ui/icons/AccountCircle";
-import MailIcon from "@material-ui/icons/Mail";
-import NotificationsIcon from "@material-ui/icons/Notifications";
 import MoreIcon from "@material-ui/icons/MoreVert";
-// import Sapiens from "../../assets/icons"
+import CardContent from "../../utils/constants/Courses";
+import logo from '../../assets/Sapiens.png'
+import index from '../../utils/constants/Search'
+import { TextField } from '@material-ui/core'
+import Autocomplete from '@material-ui/lab/Autocomplete'
 
 const styles = (theme) => ({
     grow: {
         flexGrow: 1
-    },
-    menuButton: {
-        marginRight: theme.spacing(2)
     },
     title: {
         display: "none",
@@ -31,42 +25,22 @@ const styles = (theme) => ({
             display: "block"
         }
     },
+    headerLogo:{
+        height: 25,
+    },
+    searchContainer:{
+        margin:theme.spacing(0.5, 3, 0.5, 3),
+        width:'300px'
+    },
     search: {
         position: "relative",
-        border:'1px solid black',
-        borderRadius: theme.shape.borderRadius,
-        backgroundColor: fade(theme.palette.common.black, 0.15),
-        "&:hover": {
-            backgroundColor: fade(theme.palette.common.black, 0.25)
+        border: '1px solid #00278b',
+        borderRadius: '25px',
+        [theme.breakpoints.down("sm")]: {
+            display: 'none'
         },
-        marginRight: theme.spacing(2),
-        marginLeft: 0,
-        width: "100%",
-        [theme.breakpoints.up("sm")]: {
-            marginLeft: theme.spacing(3),
-            width: "auto"
-        }
-    },
-    searchIcon: {
-        width: theme.spacing(7),
-        height: "100%",
-        position: "absolute",
-        pointerEvents: "none",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        color:"black",
-    },
-    inputRoot: {
-        color: "inherit"
-    },
-    inputInput: {
-        padding: theme.spacing(1, 1, 1, 7),
-        transition: theme.transitions.create("width"),
-        width: "100%",
-        [theme.breakpoints.up("md")]: {
-            width: 200
-        }
+        textDecoration: 'none',
+        padding: theme.spacing(0.5, 3, 0.5, 3),
     },
     sectionDesktop: {
         display: "none",
@@ -79,48 +53,33 @@ const styles = (theme) => ({
         [theme.breakpoints.up("md")]: {
             display: "none"
         }
+    },
+    navbarLinks: {
+        display: 'flex',
+        textDecoration: 'none',
+        marginLeft: '20px',
+        color: '#00287b',
+        [theme.breakpoints.up("md")]: {
+            fontSize: '18px',
+        },
+        [theme.breakpoints.up("xl")]: {
+            fontSize: '24px',
+        },
     }
 });
 
 const ToolbarComponent = (props) => {
-    const [anchorEl, setAnchorEl] = useState(false);
+
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(false);
-
-    const handleProfileMenuOpen = (e) => {
-        setAnchorEl(e.currentTarget);
-    };
-
+    const [inputValue, setInputValue] = useState("")
+    console.log(inputValue)
     const handleMobileMenuOpen = (e) => {
         setMobileMoreAnchorEl(e.currentTarget);
     };
-
     const handleMobileMenuClose = () => {
         setMobileMoreAnchorEl(null);
     };
-
-    const handleMenuClose = () => {
-        setAnchorEl(null);
-        setMobileMoreAnchorEl(null);
-    };
-
     const { classes } = props;
-
-    const menuId = "primary-search-account-menu";
-
-    const renderMenu = (
-        <Menu
-            anchorEl={anchorEl}
-            anchorOrigin={{ vertical: "top", horizontal: "right" }}
-            id={menuId}
-            keepMounted
-            transformOrigin={{ vertical: "top", horizontal: "right" }}
-            open={anchorEl}
-            onClose={handleMenuClose}
-        >
-            <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-            <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-        </Menu>
-    );
 
     const mobileMenuId = "primary-search-account-menu-mobile";
 
@@ -134,85 +93,70 @@ const ToolbarComponent = (props) => {
             open={mobileMoreAnchorEl}
             onClose={handleMobileMenuClose}
         >
-            <MenuItem>
-                <IconButton aria-label="show 4 new mails" color="inherit">
-                    <Badge badgeContent={4} color="secondary">
-                        <MailIcon />
-                    </Badge>
-                </IconButton>
-                <p>Messages</p>
-            </MenuItem>
-            <MenuItem>
-                <IconButton aria-label="show 11 new notifications" color="inherit">
-                    <Badge badgeContent={11} color="secondary">
-                        <NotificationsIcon />
-                    </Badge>
-                </IconButton>
-                <p>Notifications</p>
-            </MenuItem>
-            <MenuItem onClick={handleProfileMenuOpen}>
-                <IconButton
-                    aria-label="account of current user"
-                    aria-controls="primary-search-account-menu"
-                    aria-haspopup="true"
-                    color="inherit"
-                >
-                    <AccountCircle />
-                </IconButton>
-                <p>Profile</p>
-            </MenuItem>
+            {CardContent.map((item) => (
+                <MenuItem key={item.heading} onClick={handleMobileMenuClose}>
+                    <a
+                        className={classes.navbarLinks}
+                        href={item.to}
+                    >
+                        {item.heading}
+                    </a>
+                </MenuItem>
+            ))}
         </Menu>
     );
 
+    const handleChange = (event, value) => {
+        if(value){
+            const {to} = index.find((topic) => topic.title === value)                
+            console.log(to)
+            return window.open(to, "_self")
+        }
+        
+    }
+
+
     return (
         <div className={classes.grow}>
-            <AppBar position="static" style={{background:"white"}}>
+            <AppBar position="static" style={{ background: "white" }}>
                 <Toolbar>
-                    <IconButton
-                        edge="start"
-                        className={classes.menuButton}
-                        color="black"
-                        aria-label="open drawer"
-                        onClick={props.openDrawerHandler}
-                    >
-                        <MenuIcon />
-                    </IconButton>
-                    <img className='header-logo' alt={'title'} src={"Sapiens.svg"} />
-                    <div className={classes.search}>
-                        <div className={classes.searchIcon}>
-                            <SearchIcon />
-                        </div>
-                        <InputBase
-                            placeholder="Search…"
-                            classes={{
-                                root: classes.inputRoot,
-                                input: classes.inputInput
-                            }}
-                            inputProps={{ "aria-label": "search" }}
-                        />
-                    </div>
+                    <img className={classes.headerLogo} alt={'title'} src={logo} />
                     <div className={classes.grow} />
                     <div className={classes.sectionDesktop}>
-                        <IconButton aria-label="show 4 new mails" color="black">
-                            <Badge badgeContent={4} color="secondary">
-                                <MailIcon />
-                            </Badge>
-                        </IconButton>
-                        <IconButton aria-label="show 17 new notifications" color="black">
-                            <Badge badgeContent={17} color="secondary">
-                                <NotificationsIcon />
-                            </Badge>
-                        </IconButton>
-                        <IconButton
-                            edge="end"
-                            aria-label="account of current user"
-                            aria-controls={menuId}
-                            aria-haspopup="true"
-                            onClick={handleProfileMenuOpen}
-                            color="black"
-                        >
-                            <AccountCircle />
-                        </IconButton>
+                        {CardContent.map((item) => (
+                            <a key={item.heading}
+                                className={classes.navbarLinks}
+                                href={item.to}
+                            >
+                                {item.heading}
+                            </a>
+                        ))}
+                    </div>
+                    <div className={classes.searchContainer}>
+                        <Autocomplete
+                            freeSolo
+                            id="autocomplete-search"
+                            disableClearable
+                            inputValue={inputValue}
+                            onInputChange={(event, newInputValue) => {
+                                setInputValue(newInputValue);
+                              }}
+                            options={index.map((option) => option.title)}
+                            onChange={handleChange}
+                            renderInput={(params) => (
+                                <TextField
+                                    {...params}
+                                    className={classes.search}
+                                    placeholder="Search..."
+                                    InputProps={{
+                                        ...params.InputProps,
+                                        type: 'search',
+                                        endAdornment: !inputValue && <SearchIcon />,
+                                        disableUnderline: true
+                                    }}
+                                />
+                            )}
+                        />
                     </div>
                     <div className={classes.sectionMobile}>
                         <IconButton
@@ -226,9 +170,8 @@ const ToolbarComponent = (props) => {
                         </IconButton>
                     </div>
                 </Toolbar>
+                {renderMobileMenu}
             </AppBar>
-            {renderMobileMenu}
-            {renderMenu}
         </div>
     );
 };
